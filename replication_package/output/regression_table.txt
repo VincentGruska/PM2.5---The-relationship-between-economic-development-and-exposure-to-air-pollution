@@ -1,0 +1,42 @@
+
+\begin{table}[htbp]
+   \caption{PM2.5 exposure and economic development (no population density control)}
+   \centering
+   \begin{tabular}{lcccccc}
+      \tabularnewline \midrule \midrule
+      Dependent Variable: & \multicolumn{6}{c}{ln\_pm25}\\
+      Model:               & (1)            & (2)            & (3)            & (4)            & (5)            & (6)\\  
+      \midrule
+      \emph{Variables}\\
+      Constant             & 3.14$^{***}$   &                &                & -8.02          &                &   \\   
+                           & (0.043)        &                &                & (4.94)         &                &   \\   
+      ln GDP/cap (centred) & -0.227$^{***}$ & -0.114$^{***}$ & -0.234$^{***}$ & -0.232$^{***}$ & 0.020          & 0.003\\   
+                           & (0.024)        & (0.019)        & (0.026)        & (0.025)        & (0.032)        & (0.032)\\   
+      (ln GDP/cap)²        & -0.011         & -0.029$^{***}$ & -0.009         & -0.009         & -0.022$^{***}$ & -0.015$^{***}$\\   
+                           & (0.013)        & (0.005)        & (0.013)        & (0.013)        & (0.005)        & (0.005)\\   
+      year                 &                &                &                & 0.006$^{**}$   &                &   \\   
+                           &                &                &                & (0.002)        &                &   \\   
+      Urban \%             &                &                &                &                &                & 0.001\\   
+                           &                &                &                &                &                & (0.002)\\   
+      Industry \%GDP       &                &                &                &                &                & 0.0003\\   
+                           &                &                &                &                &                & (0.001)\\   
+      Trade \%GDP          &                &                &                &                &                & -0.0007$^{*}$\\   
+                           &                &                &                &                &                & (0.0004)\\   
+      Renewables \%        &                &                &                &                &                & -0.003$^{**}$\\   
+                           &                &                &                &                &                & (0.002)\\   
+      \midrule
+      \emph{Fixed-effects}\\
+      cc                   &                & Yes            &                &                & Yes            & Yes\\  
+      year                 &                &                & Yes            &                & Yes            & Yes\\  
+      \midrule
+      \emph{Fit statistics}\\
+      Observations         & 3,185          & 3,185          & 3,185          & 3,185          & 3,185          & 3,185\\  
+      R$^2$                & 0.334          & 0.965          & 0.341          & 0.337          & 0.969          & 0.970\\  
+      Within R$^2$         &                & 0.139          & 0.336          &                & 0.054          & 0.077\\  
+      \midrule \midrule
+      \multicolumn{7}{l}{\emph{Clustered (cc) standard-errors in parentheses}}\\
+      \multicolumn{7}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+   \end{tabular}
+\end{table}
+
+
